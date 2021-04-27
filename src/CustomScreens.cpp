@@ -9,11 +9,11 @@ namespace williamcraft {
     }
 
     bool TestScreen::OnUserCreate() {
-        keyListener.Register(olc::S, {0, TIME_AFTER_DRAW, [](Screen *screen, int, void*, bool, bool, bool released) {
-            if (released) ((TestScreen *) screen)->finished = true;
+        keyListener.Register(olc::S, {0, TIME_AFTER_DRAW, [](Screen *screen, int, void*, olc::HWButton states) {
+            if (states.bReleased) ((TestScreen *) screen)->finished = true;
         }});
-        keyListener.Register(olc::A, {0, TIME_IN_DRAW, [](Screen *screen, int, void*, bool held, bool, bool) {
-            if (held) screen->engine->DrawString(30, 30, "A", ((TestScreen*)screen)->col);
+        keyListener.Register(olc::A, {0, TIME_IN_DRAW, [](Screen *screen, int, void*, olc::HWButton states) {
+            if (states.bHeld) screen->engine->DrawString(30, 30, "A", ((TestScreen*)screen)->col);
         }});
         return true;
     }
@@ -47,11 +47,11 @@ namespace williamcraft {
 
     }
     bool TestScreen2::OnUserCreate() {
-        keyListener.Register(olc::S, {0, TIME_AFTER_DRAW, [](Screen *screen, int, void*, bool, bool, bool released) {
-            if (released) ((TestScreen2 *) screen)->finished = true;
+        keyListener.Register(olc::S, {0, TIME_AFTER_DRAW, [](Screen *screen, int, void*, olc::HWButton states) {
+            if (states.bReleased) ((TestScreen2 *) screen)->finished = true;
         }});
-        keyListener.Register(olc::B, {0, TIME_IN_DRAW, [](Screen *screen, int, void*, bool held, bool, bool) {
-            if (held) screen->engine->DrawString(30, 30, "B", olc::WHITE);
+        keyListener.Register(olc::B, {0, TIME_IN_DRAW, [](Screen *screen, int, void*, olc::HWButton states) {
+            if (states.bHeld) screen->engine->DrawString(30, 30, "B", olc::WHITE);
         }});
         return true;
     }

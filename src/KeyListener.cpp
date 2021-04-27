@@ -15,7 +15,7 @@ namespace williamcraft {
                 states = screen->engine->GetKey(last_key);
             }
             if (it->second.callTime == callTime)
-                it->second.func(screen, callTime, data, states.bHeld, states.bPressed, states.bReleased);
+                it->second.func(screen, callTime, data, states);
         }
     }
 

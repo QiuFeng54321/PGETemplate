@@ -16,7 +16,7 @@
 #define TIME_UNKNOWN -1
 
 namespace williamcraft {
-    typedef void(*pred)(Screen* screen, int callTime, void* data, bool held, bool pressed, bool released);
+    typedef void(*pred)(Screen* screen, int callTime, void* data, olc::HWButton states);
 
     struct Listener {
         int id;
