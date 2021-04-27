@@ -10,9 +10,11 @@
 #include "Screen.h"
 
 
-#define TIME_AFTER_DRAW 0
-#define TIME_BEFORE_DRAW 1
-#define TIME_IN_DRAW 2
+#define TIME_IN_DRAW 0
+#define TIME_GLOB_BEFORE_UPDATE 1
+#define TIME_GLOB_AFTER_UPDATE 2
+#define TIME_BEFORE_UPDATE 3
+#define TIME_AFTER_UPDATE 4
 #define TIME_UNKNOWN -1
 
 namespace williamcraft {
@@ -27,15 +29,16 @@ namespace williamcraft {
 
     class KeyListener {
     public:
-        std::unordered_multimap<olc::Key, Listener> keys;
         Screen* screen;
+        olc::PixelGameEngine* engine;
+        std::unordered_multimap<olc::Key, Listener> keys;
         void Listen(int callTime, void* data);
 
         void Register(olc::Key key, Listener listener);
 
         void Unregister(olc::Key key, int id = -1);
     };
-    inline KeyListener keyListener;
+    inline KeyListener ScreenKeyListener, GlobalKeyListener;
 }
 
 #endif //PGETEST_KEYLISTENER_H

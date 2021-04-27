@@ -12,7 +12,7 @@ namespace williamcraft {
         for (auto it = keys.begin(); it != keys.end(); it++) {
             if (it->first != last_key) {
                 last_key = it->first;
-                states = screen->engine->GetKey(last_key);
+                states = engine->GetKey(last_key);
             }
             if (it->second.callTime == callTime)
                 it->second.func(screen, callTime, data, states);

@@ -9,10 +9,10 @@ namespace williamcraft {
     }
 
     bool TestScreen::OnUserCreate() {
-        keyListener.Register(olc::S, {0, TIME_AFTER_DRAW, [](Screen *screen, int, void*, olc::HWButton states) {
+        ScreenKeyListener.Register(olc::S, {0, TIME_AFTER_UPDATE, [](Screen *screen, int, void*, olc::HWButton states) {
             if (states.bReleased) ((TestScreen *) screen)->finished = true;
         }});
-        keyListener.Register(olc::A, {0, TIME_IN_DRAW, [](Screen *screen, int, void*, olc::HWButton states) {
+        ScreenKeyListener.Register(olc::A, {0, TIME_IN_DRAW, [](Screen *screen, int, void*, olc::HWButton states) {
             if (states.bHeld) screen->engine->DrawString(30, 30, "A", ((TestScreen*)screen)->col);
         }});
         return true;
@@ -31,8 +31,7 @@ namespace williamcraft {
         for (int i = 0; i < 16; i += 4)
             engine->DrawCircle({128, 128}, 16 + i, col);
         engine->DrawString(10, 10, "Hello World", col);
-        keyListener.Listen(TIME_IN_DRAW, nullptr);
-        keyListener.Listen(TIME_AFTER_DRAW, nullptr);
+        ScreenKeyListener.Listen(TIME_IN_DRAW, nullptr);
     }
 
     Screen *TestScreen::NextScreen() {
@@ -47,10 +46,10 @@ namespace williamcraft {
 
     }
     bool TestScreen2::OnUserCreate() {
-        keyListener.Register(olc::S, {0, TIME_AFTER_DRAW, [](Screen *screen, int, void*, olc::HWButton states) {
+        ScreenKeyListener.Register(olc::S, {0, TIME_AFTER_UPDATE, [](Screen *screen, int, void*, olc::HWButton states) {
             if (states.bReleased) ((TestScreen2 *) screen)->finished = true;
         }});
-        keyListener.Register(olc::B, {0, TIME_IN_DRAW, [](Screen *screen, int, void*, olc::HWButton states) {
+        ScreenKeyListener.Register(olc::B, {0, TIME_IN_DRAW, [](Screen *screen, int, void*, olc::HWButton states) {
             if (states.bHeld) screen->engine->DrawString(30, 30, "B", olc::WHITE);
         }});
         return true;
@@ -65,8 +64,7 @@ namespace williamcraft {
         for (int i = 0; i < 16; i += 5)
             engine->DrawCircle({128, 128}, 16 + i);
         engine->DrawString(10, 10, "Screen2");
-        keyListener.Listen(TIME_IN_DRAW, nullptr);
-        keyListener.Listen(TIME_AFTER_DRAW, nullptr);
+        ScreenKeyListener.Listen(TIME_IN_DRAW, nullptr);
     }
 
     bool TestScreen2::Finished() {

@@ -14,13 +14,13 @@ namespace williamcraft {
         std::chrono::time_point<std::chrono::milliseconds> start_time;
         olc::PixelGameEngine* engine;
         float alive_time = 0.;
+        bool proposeExit = false;
         Screen(olc::PixelGameEngine* pge);
         virtual bool OnUserCreate();
         virtual bool OnUserUpdate(float elapsedTime);
         virtual bool OnUserDestroy();
         virtual bool Finished();
         virtual Screen* NextScreen();
-
     };
 
 }

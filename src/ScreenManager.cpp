@@ -8,7 +8,11 @@ namespace williamcraft {
     void ScreenManager::Start() {
     }
     bool ScreenManager::OnUserUpdate(float elapsedTime) {
+        ScreenKeyListener.Listen(TIME_BEFORE_UPDATE, nullptr);
         currentScreen->OnUserUpdate(elapsedTime);
+        ScreenKeyListener.Listen(TIME_AFTER_UPDATE, nullptr);
+        if (currentScreen->proposeExit)
+            exit(0);
         if (currentScreen->Finished())
             NextScreen();
         return true;
@@ -21,9 +25,10 @@ namespace williamcraft {
     bool ScreenManager::SetScreen(Screen *screen) {
         if (currentScreen != nullptr)
             currentScreen->OnUserDestroy();
-            keyListener.keys.clear();
+            ScreenKeyListener.keys.clear();
         currentScreen = screen;
-        keyListener.screen = currentScreen;
+        ScreenKeyListener.screen = currentScreen;
+        ScreenKeyListener.engine = currentScreen->engine;
         currentScreen->OnUserCreate();
         return true;
     }

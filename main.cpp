@@ -9,6 +9,11 @@ class Game : public olc::PixelGameEngine {
 public:
     Game() {
         sAppName = "Game";
+        williamcraft::GlobalKeyListener.engine = this;
+        williamcraft::GlobalKeyListener.Register(olc::ESCAPE, {0, TIME_GLOB_BEFORE_UPDATE, [](williamcraft::Screen*, int, void*, olc::HWButton states){
+            if (states.bReleased)
+                exit(0);
+        }});
         manager.Start();
     }
 
@@ -20,7 +25,9 @@ public:
     }
 
     bool OnUserUpdate(float fElapsedTime) override {
+        williamcraft::GlobalKeyListener.Listen(TIME_GLOB_BEFORE_UPDATE, nullptr);
         manager.OnUserUpdate(fElapsedTime);
+        williamcraft::GlobalKeyListener.Listen(TIME_GLOB_AFTER_UPDATE, nullptr);
         return true;
     }
 };
