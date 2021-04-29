@@ -8,10 +8,12 @@
 #include "olcPixelGameEngine.h"
 #include "Screen.h"
 #include "KeyListener.h"
+#include <string>
 
 namespace williamcraft {
     class TestScreen : public Screen {
     public:
+        std::string str;
         olc::Pixel col;
         float last_updated = 0.;
         bool finished = false;

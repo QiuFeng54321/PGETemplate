@@ -1,7 +1,9 @@
 #include "olcPixelGameEngine.h"
+#include "Resources.h"
 #include "ScreenManager.h"
 #include "CustomScreens.h"
 #include <chrono>
+#include <string>
 
 class Game : public olc::PixelGameEngine {
     float last_updated = 0;
@@ -34,6 +36,10 @@ public:
 
 
 int main() {
+    std::filesystem::current_path("/Users/mac/Documents/VSCProjects/PGETemplate/");
+    std::string key = "";
+    williamcraft::ResourcePack = new olc::ResourcePack();
+    williamcraft::ResourcePack->LoadPack("ResourcePack.dat", key);
     Game demo;
     if (demo.Construct(256, 256, 3, 3))
         demo.Start();
