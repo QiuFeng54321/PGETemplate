@@ -1,3 +1,19 @@
+//     <one line to give the program's name and a brief idea of what it does.>
+//     Copyright (C) 2021  Qiufeng54321
+//
+//     This program is free software: you can redistribute it and/or modify
+//     it under the terms of the GNU General Public License as published by
+//     the Free Software Foundation, either version 3 of the License, or
+//     (at your option) any later version.
+//
+//     This program is distributed in the hope that it will be useful,
+//     but WITHOUT ANY WARRANTY; without even the implied warranty of
+//     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//     GNU General Public License for more details.
+//
+//     You should have received a copy of the GNU General Public License
+//     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 //
 // Created by mac on 2021/5/20.
 //
@@ -12,8 +28,6 @@
 using namespace irrklang;
 
 
-
-
 // a class implementing the IFileFactory
 // interface to override irrklang file access
 class irrKlangResourceFileFactory : public irrklang::IFileFactory {
@@ -26,14 +40,13 @@ public:
         auto file = fmemopen(buf.data(), buf.size(), "rb");
         return new ResourceReadFile(file, filename);
     }
+
     // an own implementation if IReadFile to overwrite read access to files
-    class ResourceReadFile : public irrklang::IFileReader
-    {
+    class ResourceReadFile : public irrklang::IFileReader {
     public:
 
         // constructor, store size of file and filename
-        ResourceReadFile(FILE* file, const ik_c8* filename)
-        {
+        ResourceReadFile(FILE *file, const ik_c8 *filename) {
             File = file;
             strcpy(Filename, filename);
 
@@ -43,40 +56,34 @@ public:
             fseek(File, 0, SEEK_SET);
         }
 
-        ~ResourceReadFile()
-        {
+        ~ResourceReadFile() {
             fclose(File);
         }
 
         //! reads data, returns how much was read
-        ik_s32 read(void* buffer, ik_u32 sizeToRead)
-        {
+        ik_s32 read(void *buffer, ik_u32 sizeToRead) {
 //            printf("ResourceReadFile: read %d bytes\n", sizeToRead);
-            return (ik_s32)fread(buffer, 1, sizeToRead, File);
+            return (ik_s32) fread(buffer, 1, sizeToRead, File);
         }
 
         //! changes position in file, returns true if successful
-        bool seek(ik_s32 finalPos, bool relativeMovement)
-        {
+        bool seek(ik_s32 finalPos, bool relativeMovement) {
 //            printf("ResourceReadFile: seek to position %d\n", finalPos);
             return fseek(File, finalPos, relativeMovement ? SEEK_CUR : SEEK_SET) == 0;
         }
 
         //! returns size of file
-        ik_s32 getSize()
-        {
+        ik_s32 getSize() {
             return FileSize;
         }
 
         //! returns where in the file we are.
-        ik_s32 getPos()
-        {
+        ik_s32 getPos() {
             return ftell(File);
         }
 
         //! returns name of file
-        const ik_c8* getFileName()
-        {
+        const ik_c8 *getFileName() {
             return Filename;
         }
 
