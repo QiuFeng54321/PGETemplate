@@ -30,12 +30,12 @@ namespace williamcraft {
     class TestScreen : public Screen {
     public:
         std::string str;
-        int sound_id;
+        int sound_id{};
         olc::Pixel col;
         float last_updated = 0.;
         bool finished = false;
 
-        TestScreen(olc::PixelGameEngine* pge);
+        explicit TestScreen(olc::PixelGameEngine *pge);
 
         bool OnUserCreate() override;
 
@@ -51,7 +51,7 @@ namespace williamcraft {
         float last_updated = 0.;
         bool finished = false;
 
-        TestScreen2(olc::PixelGameEngine* pge);
+        explicit TestScreen2(olc::PixelGameEngine *pge);
 
         bool OnUserCreate() override;
 

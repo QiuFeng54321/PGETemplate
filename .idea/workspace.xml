@@ -12,11 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd8b8f68-9d63-40a3-b3ba-b094c83c7567" name="Default Changelist" comment="update .gitignore, ignored workspace.xml">
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/GPL.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="dd8b8f68-9d63-40a3-b3ba-b094c83c7567" name="Default Changelist" comment="Apply licence" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +126,7 @@
       <workItem from="1620714389549" duration="697000" />
       <workItem from="1621418975826" duration="1034000" />
       <workItem from="1621420105522" duration="1865000" />
-      <workItem from="1621468220661" duration="14762000" />
+      <workItem from="1621468220661" duration="15069000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Structure">
       <created>1617809633923</created>
@@ -209,7 +205,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621523999645</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add license">
+      <created>1621525459121</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1621525459121</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Apply licence">
+      <created>1621525662238</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1621525662238</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +253,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial Structure" />
@@ -257,7 +266,9 @@
     <MESSAGE value="workspace update (?_" />
     <MESSAGE value="remove resource files" />
     <MESSAGE value="update .gitignore, ignored workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="update .gitignore, ignored workspace.xml" />
+    <MESSAGE value="Add license" />
+    <MESSAGE value="Apply licence" />
+    <option name="LAST_COMMIT_MESSAGE" value="Apply licence" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -19,7 +19,6 @@
 //
 
 #include "CustomScreens.h"
-#include "Resources.h"
 #include "Sounds.h"
 
 namespace williamcraft {
@@ -62,6 +61,7 @@ namespace williamcraft {
         engine->DrawString(10, 10, "Hello World", col);
         engine->DrawString(10, 20, str, col);
         ScreenKeyListener.Listen(TIME_IN_DRAW, nullptr);
+        return true;
     }
 
     Screen *TestScreen::NextScreen() {
@@ -97,6 +97,7 @@ namespace williamcraft {
             engine->DrawCircle({128, 128}, 16 + i);
         engine->DrawString(10, 10, "Screen2");
         ScreenKeyListener.Listen(TIME_IN_DRAW, nullptr);
+        return true;
     }
 
     bool TestScreen2::Finished() {
