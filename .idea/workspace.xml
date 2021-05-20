@@ -12,10 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd8b8f68-9d63-40a3-b3ba-b094c83c7567" name="Default Changelist" comment="workspace update (?_">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="dd8b8f68-9d63-40a3-b3ba-b094c83c7567" name="Default Changelist" comment="remove resource files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,7 +126,7 @@
       <workItem from="1620714389549" duration="697000" />
       <workItem from="1621418975826" duration="1034000" />
       <workItem from="1621420105522" duration="1865000" />
-      <workItem from="1621468220661" duration="13586000" />
+      <workItem from="1621468220661" duration="13848000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Structure">
       <created>1617809633923</created>
@@ -194,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621522545185</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="remove resource files">
+      <created>1621523378377</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1621523378377</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +209,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="gitee/HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -223,6 +239,7 @@
     <MESSAGE value="Add irrKlang support" />
     <MESSAGE value="Add libs" />
     <MESSAGE value="workspace update (?_" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace update (?_" />
+    <MESSAGE value="remove resource files" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove resource files" />
   </component>
 </project>

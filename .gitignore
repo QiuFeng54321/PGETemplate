@@ -12,3 +12,4 @@ _deps
 resources
 cmake-build-debug
 ResourcePack.dat
+workspace.xml
