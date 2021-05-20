@@ -12,7 +12,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd8b8f68-9d63-40a3-b3ba-b094c83c7567" name="Default Changelist" comment="remove resource files" />
+    <list default="true" id="dd8b8f68-9d63-40a3-b3ba-b094c83c7567" name="Default Changelist" comment="update .gitignore, ignored workspace.xml">
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/GPL.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +72,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -126,7 +130,7 @@
       <workItem from="1620714389549" duration="697000" />
       <workItem from="1621418975826" duration="1034000" />
       <workItem from="1621420105522" duration="1865000" />
-      <workItem from="1621468220661" duration="13848000" />
+      <workItem from="1621468220661" duration="14762000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Structure">
       <created>1617809633923</created>
@@ -198,11 +202,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621523378377</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update .gitignore, ignored workspace.xml">
+      <created>1621523999645</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1621523999645</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -229,6 +243,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial Structure" />
     <MESSAGE value="Basic Structure" />
@@ -240,6 +256,10 @@
     <MESSAGE value="Add libs" />
     <MESSAGE value="workspace update (?_" />
     <MESSAGE value="remove resource files" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove resource files" />
+    <MESSAGE value="update .gitignore, ignored workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="update .gitignore, ignored workspace.xml" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
