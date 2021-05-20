@@ -58,7 +58,7 @@ public:
 
 
 int main() {
-
+    williamcraft::SoundEngine = irrklang::createIrrKlangDevice();
     if (!williamcraft::SoundEngine)
         std::cout << "Failed to initialize the engine" << std::endl; // error starting up the engine
     auto factory = new irrKlangResourceFileFactory();

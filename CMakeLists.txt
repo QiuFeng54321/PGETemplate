@@ -24,9 +24,9 @@ if (CMAKE_HOST_SYSTEM_NAME MATCHES "Darwin")
     set(IRRKLANG_LINK_DIR "${IRRKLANG_DIR}/bin/macosx-gcc")
 
     add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-            COMMAND install_name_tool -change /usr/local/lib/libikpFLAC.dylib ${IRRKLANG_LINK_DIR}/ikpFLAC.dylib ${CMAKE_BINARY_DIR}/${PROJECT_NAME}
-            COMMAND install_name_tool -change /usr/local/lib/libikpMP3.dylib ${IRRKLANG_LINK_DIR}/ikpMP3.dylib ${CMAKE_BINARY_DIR}/${PROJECT_NAME}
-            COMMAND install_name_tool -change /usr/local/lib/libirrklang.dylib ${IRRKLANG_LINK_DIR}/libirrklang.dylib ${CMAKE_BINARY_DIR}/${PROJECT_NAME}
+            COMMAND install_name_tool -change /usr/local/lib/libikpFLAC.dylib @executable_path/ikpFLAC.dylib ${CMAKE_BINARY_DIR}/${PROJECT_NAME}
+            COMMAND install_name_tool -change /usr/local/lib/libikpMP3.dylib @executable_path/ikpMP3.dylib ${CMAKE_BINARY_DIR}/${PROJECT_NAME}
+            COMMAND install_name_tool -change /usr/local/lib/libirrklang.dylib @executable_path/irrKlang.dylib ${CMAKE_BINARY_DIR}/${PROJECT_NAME}
             WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
             COMMENT "Changing lib paths (MacOS Specific)"
             )
@@ -60,6 +60,7 @@ target_link_libraries(PGEPack ${PNG} ${GLUT} ${GL})
 target_link_libraries(PGETemplate ${PNG} ${GLUT} ${GL} ${IRRKLANG_LIBS})
 
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy ${IRRKLANG_LINK_DIR}/irrKlang${CMAKE_SHARED_LIBRARY_SUFFIX} ${CMAKE_BINARY_DIR}/
         COMMAND ${CMAKE_COMMAND} -E copy ${IRRKLANG_LINK_DIR}/ikpMP3${CMAKE_SHARED_LIBRARY_SUFFIX} ${CMAKE_BINARY_DIR}/
         COMMAND ${CMAKE_COMMAND} -E copy ${IRRKLANG_LINK_DIR}/ikpFLAC${CMAKE_SHARED_LIBRARY_SUFFIX} ${CMAKE_BINARY_DIR}/
         WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}

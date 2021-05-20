@@ -26,8 +26,8 @@
 #include <iostream>
 
 namespace williamcraft {
-    inline irrklang::ISoundEngine* SoundEngine = irrklang::createIrrKlangDevice();
-    inline std::vector<irrklang::ISound*> Sounds;
+    inline irrklang::ISoundEngine *SoundEngine;
+    inline std::vector<irrklang::ISound *> Sounds;
 
     inline int append_sound(irrklang::ISound* sound) {
         Sounds.push_back(sound);

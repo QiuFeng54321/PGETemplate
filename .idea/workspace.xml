@@ -12,7 +12,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd8b8f68-9d63-40a3-b3ba-b094c83c7567" name="Default Changelist" comment="Apply licence" />
+    <list default="true" id="dd8b8f68-9d63-40a3-b3ba-b094c83c7567" name="Default Changelist" comment="Fix warnings">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Sounds.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Sounds.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irrKlang/bin/macosx-gcc/libirrklang.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/irrKlang/bin/macosx-gcc/irrklang.dylib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,7 +132,7 @@
       <workItem from="1620714389549" duration="697000" />
       <workItem from="1621418975826" duration="1034000" />
       <workItem from="1621420105522" duration="1865000" />
-      <workItem from="1621468220661" duration="15069000" />
+      <workItem from="1621468220661" duration="15956000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Structure">
       <created>1617809633923</created>
@@ -219,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621525662238</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fix warnings">
+      <created>1621525830314</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1621525830314</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +281,8 @@
     <MESSAGE value="update .gitignore, ignored workspace.xml" />
     <MESSAGE value="Add license" />
     <MESSAGE value="Apply licence" />
-    <option name="LAST_COMMIT_MESSAGE" value="Apply licence" />
+    <MESSAGE value="Fix warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix warnings" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
