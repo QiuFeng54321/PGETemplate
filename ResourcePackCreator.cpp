@@ -30,8 +30,4 @@ int main() {
         pack->AddFile(filenameStr);
     }
     pack->SavePack("ResourcePack.dat", key);
-    olc::ResourcePack* read_pack = new olc::ResourcePack();
-    read_pack->LoadPack("ResourcePack.dat", key);
-    olc::ResourceBuffer rb = read_pack->GetFileBuffer("resources/test.txt");
-    std::cout << rb.vMemory.data() << std::endl;
 }

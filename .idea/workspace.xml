@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="PGETemplate" targetName="PGEPack" />
+      <config projectName="PGETemplate" targetName="PGETemplate" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd8b8f68-9d63-40a3-b3ba-b094c83c7567" name="Default Changelist" comment="Add resource management">
+      <change afterPath="$PROJECT_DIR$/include/Sounds.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/irrKlangResourceFileFactory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/changes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_ESoundEngineOptions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_ESoundOutputDrivers.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_EStreamModes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_IAudioRecorder.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_IAudioStream.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_IAudioStreamLoader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_IFileFactory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_IFileReader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_IRefCounted.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_ISound.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_ISoundDeviceList.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_ISoundEffectControl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_ISoundEngine.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_ISoundMixedOutputReceiver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_ISoundSource.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_ISoundStopEventReceiver.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_IVirtualRefCounted.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_SAudioStreamFormat.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_irrKlangTypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/ik_vec3d.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/include/irrKlang.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/irrKlang/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/audio_files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/highway_cruisin.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResourcePack.dat" beforeDir="false" afterPath="$PROJECT_DIR$/ResourcePack.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/CustomScreens.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/CustomScreens.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Resources.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Resources.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CustomScreens.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomScreens.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1qq1tzYFdZ069N5gQo2qiK7Djdv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/include" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.PGETemplate">
+    <configuration name="PGEPack" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PGETemplate" TARGET_NAME="PGEPack" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PGETemplate" RUN_TARGET_NAME="PGEPack">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PGETemplate" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PGETemplate" TARGET_NAME="PGETemplate" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PGETemplate" RUN_TARGET_NAME="PGETemplate">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.PGEPack" />
+      <item itemvalue="CMake Application.PGETemplate" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd8b8f68-9d63-40a3-b3ba-b094c83c7567" name="Default Changelist" comment="" />
+      <created>1617792524953</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617792524953</updated>
+      <workItem from="1617792526278" duration="608000" />
+      <workItem from="1617793569632" duration="4928000" />
+      <workItem from="1619415697976" duration="2744000" />
+      <workItem from="1619487611435" duration="9721000" />
+      <workItem from="1619569282811" duration="3939000" />
+      <workItem from="1619684395668" duration="658000" />
+      <workItem from="1619705382307" duration="74000" />
+      <workItem from="1620178420504" duration="116000" />
+      <workItem from="1620714092353" duration="101000" />
+      <workItem from="1620714389549" duration="697000" />
+      <workItem from="1621418975826" duration="1034000" />
+      <workItem from="1621420105522" duration="1865000" />
+      <workItem from="1621468220661" duration="11141000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial Structure">
+      <created>1617809633923</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617809633923</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Basic Structure">
+      <created>1619524191243</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619524191243</updated>
+    </task>
+    <task id="LOCAL-00003" summary="CMakeLists">
+      <created>1619524209496</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619524209496</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Three bool values in type williamcraft::pred merged into olc::HWButton">
+      <created>1619524395199</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619524395199</updated>
+    </task>
+    <task id="LOCAL-00005" summary="TIME_BEFORE_ and AFTER_DRAW removed">
+      <created>1619528670732</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619528670732</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add resource management">
+      <created>1619684597445</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1619684597445</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial Structure" />
+    <MESSAGE value="Basic Structure" />
+    <MESSAGE value="CMakeLists" />
+    <MESSAGE value="Three bool values in type williamcraft::pred merged into olc::HWButton" />
+    <MESSAGE value="TIME_BEFORE_ and AFTER_DRAW removed" />
+    <MESSAGE value="Add resource management" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add resource management" />
+  </component>
+</project>

@@ -4,19 +4,26 @@
 
 #include "CustomScreens.h"
 #include "Resources.h"
+#include "Sounds.h"
 
 namespace williamcraft {
     TestScreen::TestScreen(olc::PixelGameEngine *pge) : Screen(pge) {
     }
 
     bool TestScreen::OnUserCreate() {
-        auto rb = ResourcePack->GetFileBuffer("resources/test.txt");
-        str = rb.vMemory.data();
+        str = "Hi /";
+        // Init sound
+        auto sound = williamcraft::SoundEngine->play2D("resources/highway_cruisin.mp3", false, true);
+        sound_id = williamcraft::append_sound(sound);
         ScreenKeyListener.Register(olc::S, {0, TIME_AFTER_UPDATE, [](Screen *screen, int, void*, olc::HWButton states) {
             if (states.bReleased) ((TestScreen *) screen)->finished = true;
         }});
         ScreenKeyListener.Register(olc::A, {0, TIME_IN_DRAW, [](Screen *screen, int, void*, olc::HWButton states) {
             if (states.bHeld) screen->engine->DrawString(30, 30, "A", ((TestScreen*)screen)->col);
+            if (states.bReleased) {
+                auto sound = williamcraft::get_sound(((TestScreen*)screen)->sound_id);
+                sound->setIsPaused(!sound->getIsPaused());
+            }
         }});
         ScreenKeyListener.Register(olc::A, {0, TIME_IN_DRAW, [](Screen *screen, int, void*, olc::HWButton states) {
             if (states.bHeld) screen->engine->DrawString(60, 30, "Another A", ((TestScreen*)screen)->col);
@@ -42,6 +49,7 @@ namespace williamcraft {
     }
 
     Screen *TestScreen::NextScreen() {
+        williamcraft::remove_sound(sound_id);
         return new TestScreen2(engine);
     }
 

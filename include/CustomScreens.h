@@ -14,6 +14,7 @@ namespace williamcraft {
     class TestScreen : public Screen {
     public:
         std::string str;
+        int sound_id;
         olc::Pixel col;
         float last_updated = 0.;
         bool finished = false;
