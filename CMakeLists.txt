@@ -49,13 +49,13 @@ message("system lib: ${LD_LIBRARY_PATH}")
 
 # Looks for libraries required from olcPGE
 find_package(OpenGL REQUIRED)
+find_package(GLUT REQUIRED)
 find_library(PNG png)
-find_library(GLUT glut)
 
 if (WINDOWS)
     set(EXE_LIBRARIES user32 gdi32 opengl32 gdiplus Shlwapi dwmapi stdc++fs)
 else ()
-    set(EXE_LIBRARIES ${OPENGL_LIBRARIES} ${PNG} ${GLUT})
+    set(EXE_LIBRARIES ${OPENGL_LIBRARIES} ${PNG} ${GLUT_LIBRARIES})
 endif ()
 
 include_directories(include /usr/local/include/)

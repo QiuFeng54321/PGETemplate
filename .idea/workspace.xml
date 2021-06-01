@@ -12,16 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd8b8f68-9d63-40a3-b3ba-b094c83c7567" name="Default Changelist" comment="CMake now copies irrKlang libs to executable path.&#10;MacOS executable dylib now loads @executable_path/....dylib for irrKlang">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResourcePackCreator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ResourcePackCreator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/CustomScreens.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/CustomScreens.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Resources.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Resources.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Sounds.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Sounds.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/audio_files.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/audio_files.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomScreens.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomScreens.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="dd8b8f68-9d63-40a3-b3ba-b094c83c7567" name="Default Changelist" comment="PGEPack autobuilds before PGETemplate and autoruns after build.&#10;Test drawing sprites from resource pack." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +129,7 @@
       <workItem from="1621468220661" duration="17101000" />
       <workItem from="1621748087574" duration="1328000" />
       <workItem from="1621843718369" duration="446000" />
-      <workItem from="1622518978359" duration="3304000" />
+      <workItem from="1622518978359" duration="3656000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Structure">
       <created>1617809633923</created>
@@ -245,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621555024367</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="PGEPack autobuilds before PGETemplate and autoruns after build.&#10;Test drawing sprites from resource pack.">
+      <created>1622524394782</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1622524394783</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +294,8 @@
     <MESSAGE value="Apply licence" />
     <MESSAGE value="Fix warnings" />
     <MESSAGE value="CMake now copies irrKlang libs to executable path.&#10;MacOS executable dylib now loads @executable_path/....dylib for irrKlang" />
-    <option name="LAST_COMMIT_MESSAGE" value="CMake now copies irrKlang libs to executable path.&#10;MacOS executable dylib now loads @executable_path/....dylib for irrKlang" />
+    <MESSAGE value="PGEPack autobuilds before PGETemplate and autoruns after build.&#10;Test drawing sprites from resource pack." />
+    <option name="LAST_COMMIT_MESSAGE" value="PGEPack autobuilds before PGETemplate and autoruns after build.&#10;Test drawing sprites from resource pack." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
