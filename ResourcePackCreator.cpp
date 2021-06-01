@@ -35,15 +35,16 @@
 
 int main() {
     std::string key = "";
-    olc::ResourcePack* pack = new olc::ResourcePack();
-    std::filesystem::current_path("/Users/mac/Documents/VSCProjects/PGETemplate/");
-    for(auto itEntry = std::filesystem::recursive_directory_iterator("resources");
-        itEntry != std::filesystem::recursive_directory_iterator();
-        ++itEntry ) {
-        const auto filenameStr = itEntry->path().string();
-        std::cout << std::setw(itEntry.depth()*3) << "";
+    olc::ResourcePack *pack = new olc::ResourcePack();
+    std::filesystem::current_path("/Users/mac/Documents/VSCProjects/PGETemplate/resources");
+    for (auto itEntry = std::filesystem::recursive_directory_iterator(".");
+         itEntry != std::filesystem::recursive_directory_iterator();
+         ++itEntry) {
+        if (itEntry->is_directory()) continue;
+        const auto filenameStr = relative(itEntry->path(), std::filesystem::current_path()).string();
+        std::cout << std::setw(itEntry.depth() * 3) << "";
         std::cout << "add:  " << filenameStr << '\n';
         pack->AddFile(filenameStr);
     }
-    pack->SavePack("ResourcePack.dat", key);
+    pack->SavePack("../ResourcePack.dat", key);
 }

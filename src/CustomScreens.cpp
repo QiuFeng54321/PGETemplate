@@ -20,6 +20,7 @@
 
 #include "CustomScreens.h"
 #include "Sounds.h"
+#include "Resources.h"
 
 namespace williamcraft {
     TestScreen::TestScreen(olc::PixelGameEngine *pge) : Screen(pge) {
@@ -28,21 +29,25 @@ namespace williamcraft {
     bool TestScreen::OnUserCreate() {
         str = "Hi /";
         // Init sound
-        auto sound = williamcraft::SoundEngine->play2D("resources/highway_cruisin.mp3", false, true);
+        auto sound = williamcraft::SoundEngine->play3D("MEMODEMO_Extragalactic.mp3", {0, 0, 0}, false, true);
+        sound->setMinDistance(5);
         sound_id = williamcraft::append_sound(sound);
-        ScreenKeyListener.Register(olc::S, {0, TIME_AFTER_UPDATE, [](Screen *screen, int, void*, olc::HWButton states) {
-            if (states.bReleased) ((TestScreen *) screen)->finished = true;
-        }});
-        ScreenKeyListener.Register(olc::A, {0, TIME_IN_DRAW, [](Screen *screen, int, void*, olc::HWButton states) {
-            if (states.bHeld) screen->engine->DrawString(30, 30, "A", ((TestScreen*)screen)->col);
+        ScreenKeyListener.Register(olc::S,
+                                   {0, TIME_AFTER_UPDATE, [](Screen *screen, int, void *, olc::HWButton states) {
+                                       if (states.bReleased) ((TestScreen *) screen)->finished = true;
+                                   }});
+        ScreenKeyListener.Register(olc::A, {0, TIME_IN_DRAW, [](Screen *screen, int, void *, olc::HWButton states) {
+            if (states.bHeld) screen->engine->DrawString(30, 30, "A", ((TestScreen *) screen)->col);
             if (states.bReleased) {
-                auto sound = williamcraft::get_sound(((TestScreen*)screen)->sound_id);
+                auto sound = williamcraft::get_sound(((TestScreen *) screen)->sound_id);
                 sound->setIsPaused(!sound->getIsPaused());
             }
         }});
-        ScreenKeyListener.Register(olc::A, {0, TIME_IN_DRAW, [](Screen *screen, int, void*, olc::HWButton states) {
-            if (states.bHeld) screen->engine->DrawString(60, 30, "Another A", ((TestScreen*)screen)->col);
+        ScreenKeyListener.Register(olc::A, {0, TIME_IN_DRAW, [](Screen *screen, int, void *, olc::HWButton states) {
+            if (states.bHeld) screen->engine->DrawString(60, 30, "Another A", ((TestScreen *) screen)->col);
         }});
+        sprite = std::make_unique<olc::Sprite>("sprites/Note.png", williamcraft::ResourcePack);
+        engine->SetPixelMode(olc::Pixel::MASK);
         return true;
     }
 
@@ -60,6 +65,7 @@ namespace williamcraft {
             engine->DrawCircle({128, 128}, 16 + i, col);
         engine->DrawString(10, 10, "Hello World", col);
         engine->DrawString(10, 20, str, col);
+        engine->DrawSprite({150, 150}, sprite.get());
         ScreenKeyListener.Listen(TIME_IN_DRAW, nullptr);
         return true;
     }

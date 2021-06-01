@@ -31,7 +31,7 @@ namespace williamcraft {
     inline olc::ResourcePack *ResourcePack;
 
     inline void load_all_resource_sounds() {
-        auto files_rb = williamcraft::ResourcePack->GetFileBuffer("resources/audio_files.txt");
+        auto files_rb = williamcraft::ResourcePack->GetFileBuffer("audio_files.txt");
         auto files_rb_mem = files_rb.vMemory;
         std::stringstream ss;
         std::copy(files_rb_mem.begin(), files_rb_mem.end(), std::ostream_iterator<char>(ss, ""));

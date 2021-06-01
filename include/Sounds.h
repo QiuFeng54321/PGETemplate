@@ -38,7 +38,7 @@ namespace williamcraft {
 
     inline irrklang::ISound* get_sound(int id) {
         auto sound = Sounds[id];
-        std::cout << "Sound " << id << "(" << sound->getSoundSource()->getName() << ") requested" << std::endl;
+//        std::cout << "Sound " << id << "(" << sound->getSoundSource()->getName() << ") requested" << std::endl;
         return sound;
     }
 

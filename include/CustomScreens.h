@@ -32,6 +32,7 @@ namespace williamcraft {
         std::string str;
         int sound_id{};
         olc::Pixel col;
+        std::unique_ptr<olc::Sprite> sprite;
         float last_updated = 0.;
         bool finished = false;
 
